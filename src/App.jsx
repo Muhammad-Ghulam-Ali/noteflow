@@ -188,8 +188,10 @@ function App() {
 
             <div className="filters flex items-center gap-5">
               <select
+              value={cat}
                 onChange={(e) => setCat(e.target.value)}
                 className='w-[50%] py-2 px-4 rounded-md border border-[#959494] bg-[#3a3a3a] text-[#e2e1e1] focus:outline-none focus:border-[#7F77DD] focus:ring-1 focus:ring-[#7F77DD]/40 duration-300'>
+                <option value="" disabled>Category</option>  
                 <option value="Personal">Personal</option>
                 <option value="Work">Work</option>
                 <option value="Ideas">Ideas</option>
@@ -198,8 +200,10 @@ function App() {
               </select>
 
               <select
+              value={priority}
                 onChange={(e) => setPriority(e.target.value)}
                 className='w-[50%] py-2 px-4 rounded-md border border-[#959494] bg-[#3a3a3a] text-[#e2e1e1] focus:outline-none focus:border-[#7F77DD] focus:ring-1 focus:ring-[#7F77DD]/40 duration-300'>
+                <option value="" disabled>Priority</option>
                 <option value="Normal">Normal</option>
                 <option value="Important">Important</option>
                 <option value="Urgent">Urgent</option>
