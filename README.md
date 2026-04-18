@@ -19,9 +19,6 @@ A clean, minimal note-taking app built with **React** and **Vite** — featuring
 
 ---
 
-## 🖥️ Preview
-
-> *(Add more screenshots or a GIF here)*
 
 ---
 
