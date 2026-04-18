@@ -131,7 +131,7 @@ function App() {
 
               {/* Cards */}
               <section className='w-full py-4 px-3 md:px-12'>
-                <div className="card grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-5">
+                <div className="card grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-5 pb-23">
                   {filteredNotes.map(function (elem, index) {
                     return (
                       <div
