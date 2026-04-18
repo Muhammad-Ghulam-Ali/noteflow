@@ -162,7 +162,12 @@ function App() {
                   <div className="flex flex-col items-center justify-center pb-20 gap-3">
                     <i className="fa-solid fa-magnifying-glass text-4xl text-[#333]"></i>
                     <h2 className="text-[#555] font-semibold text-lg">No results found</h2>
-                    <p className="text-[#444] text-sm">Try a different keyword or <span className="text-[#7F77DD]">clear the filter</span>.</p>
+                    <p className="text-[#444] text-sm">Try a different keyword or <span 
+                    onClick={() => {
+                      setSelectedCategory("all")
+                      setSearchTxt("")
+                    }}
+                    className="text-[#7F77DD] cursor-pointer">clear the filter</span>.</p>
                   </div>
                 )}
               </section>
